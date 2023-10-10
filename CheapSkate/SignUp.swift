@@ -15,7 +15,7 @@ struct SignUp: View {
                 .foregroundColor(.accentColor)
             Text("CheapSkate Project")
             Text("Group14")
-            Text(" ")
+            Text("Sign Up Page")
         }
         .padding()
     }
