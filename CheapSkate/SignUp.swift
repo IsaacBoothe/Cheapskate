@@ -17,6 +17,7 @@ struct SignUp: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Sign Up Page")
+            Text("Welcome to our app!")
             
             TextField("Username", text: $userName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
