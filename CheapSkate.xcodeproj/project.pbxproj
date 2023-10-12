@@ -16,6 +16,7 @@
 		78B74AA02AD65550007DC567 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74A9F2AD65550007DC567 /* FirebaseAuth */; };
 		78B74AA22AD65550007DC567 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74AA12AD65550007DC567 /* FirebaseFirestore */; };
 		78FF37AB2AD64AFC00A1ACF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */; };
+		7F89F08C2AD8840D00096C28 /* git test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89F08B2AD8840D00096C28 /* git test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5EF422ACCA46A00A8B985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F89F08B2AD8840D00096C28 /* git test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "git test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */,
 				78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */,
 				78B5EF412ACCA46A00A8B985 /* Preview Content */,
+				7F89F08B2AD8840D00096C28 /* git test.swift */,
 			);
 			path = CheapSkate;
 			sourceTree = "<group>";
@@ -112,7 +115,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					78B5EF372ACCA46800A8B985 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */,
+				7F89F08C2AD8840D00096C28 /* git test.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +206,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -262,6 +267,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
