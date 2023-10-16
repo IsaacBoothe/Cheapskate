@@ -23,6 +23,7 @@ struct NewLoginView: View {
             TextField("Enter your new email address", text: $emailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+            //text to instruct viewers to enter their password
             Text("Enter your new password")
             SecureField("Enter your new password", text: $password).textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
