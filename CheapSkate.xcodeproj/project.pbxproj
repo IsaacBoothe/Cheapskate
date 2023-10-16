@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E43E19F2ADCD2D600369D09 /* CheapSkate in Resources */ = {isa = PBXBuildFile; fileRef = 4E43E19E2ADCD2D500369D09 /* CheapSkate */; };
 		78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */; };
 		78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3D2ACCA46800A8B985 /* ContentView.swift */; };
 		78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E43E19E2ADCD2D500369D09 /* CheapSkate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CheapSkate; sourceTree = "<group>"; };
 		78B5EF382ACCA46800A8B985 /* CheapSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
 		78B5EF3D2ACCA46800A8B985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				78B5EF3A2ACCA46800A8B985 /* CheapSkate */,
+				4E43E19E2ADCD2D500369D09 /* CheapSkate */,
 				78B5EF392ACCA46800A8B985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				78FF37AB2AD64AFC00A1ACF5 /* GoogleService-Info.plist in Resources */,
 				78B5EF432ACCA46A00A8B985 /* Preview Assets.xcassets in Resources */,
 				78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */,
+				4E43E19F2ADCD2D600369D09 /* CheapSkate in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
