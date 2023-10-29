@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct SignUp: View {
     @State var userName: String = ""
@@ -19,10 +20,6 @@ struct SignUp: View {
             Text("Sign Up Page")
             Text("Welcome to our app!")
             
-            TextField("Username", text: $userName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
@@ -33,7 +30,7 @@ struct SignUp: View {
             
             Button(
                 action: {
-                    // did tap
+                    registerUser()
                 },
                 label: { Text("Sign Up") }
             )
@@ -43,6 +40,14 @@ struct SignUp: View {
                 .cornerRadius(5)
         }
         .padding()
+    }
+    
+    func registerUser() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
     }
 }
 

@@ -15,7 +15,9 @@ struct CheapSkateApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            // Loading signup first for testing purposes
+            SignUp()
         }
     }
 }
