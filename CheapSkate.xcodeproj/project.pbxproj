@@ -16,7 +16,7 @@
 		78B74AA02AD65550007DC567 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74A9F2AD65550007DC567 /* FirebaseAuth */; };
 		78B74AA22AD65550007DC567 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74AA12AD65550007DC567 /* FirebaseFirestore */; };
 		78FF37AB2AD64AFC00A1ACF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */; };
-		7F89F08C2AD8840D00096C28 /* git test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89F08B2AD8840D00096C28 /* git test.swift */; };
+		7F884A772AF03B2600C4CF0B /* passwordreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F884A762AF03B2600C4CF0B /* passwordreset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5EF422ACCA46A00A8B985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7F89F08B2AD8840D00096C28 /* git test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "git test.swift"; sourceTree = "<group>"; };
+		7F884A762AF03B2600C4CF0B /* passwordreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordreset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
+				7F884A762AF03B2600C4CF0B /* passwordreset.swift */,
 				78B5EF3D2ACCA46800A8B985 /* ContentView.swift */,
 				78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */,
 				78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */,
 				78B5EF412ACCA46A00A8B985 /* Preview Content */,
-				7F89F08B2AD8840D00096C28 /* git test.swift */,
 			);
 			path = CheapSkate;
 			sourceTree = "<group>";
@@ -161,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F884A772AF03B2600C4CF0B /* passwordreset.swift in Sources */,
 				78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */,
-				7F89F08C2AD8840D00096C28 /* git test.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
