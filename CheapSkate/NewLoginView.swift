@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 import FirebaseAuth
 
 struct NewLoginView: View {
@@ -46,7 +45,6 @@ func newLoginCredential(email: String, password: String){
     let user = Auth.auth().currentUser
     var credential: AuthCredential = EmailAuthProvider.credential(withEmail: email, password: password)
 
-    
     user?.reauthenticate(with: credential, completion: {(authResult, error) in
                 if let error = error {
                     // An error happened.
