@@ -25,6 +25,17 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
+                NavigationLink(destination: PasswordResetView()) {
+                    VStack {
+                        Text("Forgot Password?")
+                    }
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 12))
+                    .padding()
+                    .background(Color.green)
+                    .cornerRadius(5)
+                }
+                
                 Button(
                     action: {
                         loginUser(email: email, password: password)
@@ -36,7 +47,8 @@ struct LoginView: View {
                 .background(Color.green)
                 .cornerRadius(5)
                 
-                NavigationLink(destination: SignUpView()) {
+               NavigationLink(destination: SignUpView()) {
+
                     VStack {
                         Text("Sign Up")
                     }
@@ -44,10 +56,10 @@ struct LoginView: View {
                     .padding()
                     .background(Color.green)
                     .cornerRadius(5)
-                }
-            
+                }      
             }
             .padding()
+            
         }
     }
 }

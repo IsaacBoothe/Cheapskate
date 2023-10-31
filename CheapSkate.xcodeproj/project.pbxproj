@@ -26,7 +26,9 @@
 		78E74A7F2AF17CCC00BAEB54 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A7E2AF17CCC00BAEB54 /* ArticlesView.swift */; };
 		78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A802AF18B0B00BAEB54 /* AnalyticsPreview.swift */; };
 		78FF37AB2AD64AFC00A1ACF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */; };
-		CE9594902AD586B700339822 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95948F2AD586B700339822 /* SignUpView.swift */; };
+		7F4357022AF196CA001D2C32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4357012AF196CA001D2C32 /* LoginView.swift */; };
+		7F4357042AF19C8F001D2C32 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4357032AF19C8F001D2C32 /* SignUpView.swift */; };
+		7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +48,9 @@
 		78E74A7E2AF17CCC00BAEB54 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
 		78E74A802AF18B0B00BAEB54 /* AnalyticsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsPreview.swift; sourceTree = "<group>"; };
 		78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE95948F2AD586B700339822 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7F4357012AF196CA001D2C32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7F4357032AF19C8F001D2C32 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpView.swift; path = ../../../Downloads/SignUpView.swift; sourceTree = "<group>"; };
+		7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,16 +87,17 @@
 		78B5EF3A2ACCA46800A8B985 /* CheapSkate */ = {
 			isa = PBXGroup;
 			children = (
+				7F4357032AF19C8F001D2C32 /* SignUpView.swift */,
+				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
+				7F4357012AF196CA001D2C32 /* LoginView.swift */,
+				7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */,
+				78B5EF3D2ACCA46800A8B985 /* ContentView.swift */,
 				78E74A792AF17C8600BAEB54 /* Articles */,
 				78E74A782AF17C6800BAEB54 /* Quizzes */,
 				78E74A772AF17C4C00BAEB54 /* Analytics */,
 				78E74A762AF17B9500BAEB54 /* HomePage */,
-				5D43C4ED2AF0175E001241A6 /* ContentView.swift */,
-				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
 				78E74A722AF1797000BAEB54 /* MainTabView.swift */,
 				78E74A6E2AF178F600BAEB54 /* ColorExt.swift */,
-				CE95948F2AD586B700339822 /* SignUpView.swift */,
-				5D7342232AF0052B00E88480 /* LoginView.swift */,
 				78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */,
 				78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */,
 				78B5EF412ACCA46A00A8B985 /* Preview Content */,
@@ -177,7 +182,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					78B5EF372ACCA46800A8B985 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -223,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */,
+				7F4357042AF19C8F001D2C32 /* SignUpView.swift in Sources */,
+				78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */,
+				7F4357022AF196CA001D2C32 /* LoginView.swift in Sources */,
 				78E74A752AF179B300BAEB54 /* HomeView.swift in Sources */,
-				CE9594902AD586B700339822 /* SignUpView.swift in Sources */,
 				78E74A7D2AF17CB600BAEB54 /* QuizView.swift in Sources */,
 				78E74A7F2AF17CCC00BAEB54 /* ArticlesView.swift in Sources */,
 				78E74A6F2AF178F600BAEB54 /* ColorExt.swift in Sources */,
@@ -278,6 +286,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,6 +347,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
