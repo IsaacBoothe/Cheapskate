@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D43C4EE2AF0175F001241A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D43C4ED2AF0175E001241A6 /* ContentView.swift */; };
-		5D7342242AF0052B00E88480 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7342232AF0052B00E88480 /* LoginView.swift */; };
 		78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */; };
 		78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */; };
 		78B5EF432ACCA46A00A8B985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF422ACCA46A00A8B985 /* Preview Assets.xcassets */; };
@@ -27,13 +25,12 @@
 		78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A802AF18B0B00BAEB54 /* AnalyticsPreview.swift */; };
 		78FF37AB2AD64AFC00A1ACF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */; };
 		7F4357022AF196CA001D2C32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4357012AF196CA001D2C32 /* LoginView.swift */; };
-		7F4357042AF19C8F001D2C32 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4357032AF19C8F001D2C32 /* SignUpView.swift */; };
 		7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */; };
+		CE37874F2AF1B5F700B1E32A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37874E2AF1B5F700B1E32A /* SignUpView.swift */; };
+		CE3787512AF1B66100B1E32A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3787502AF1B66100B1E32A /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D43C4ED2AF0175E001241A6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5D7342232AF0052B00E88480 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		78B5EF382ACCA46800A8B985 /* CheapSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
 		78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,8 +46,9 @@
 		78E74A802AF18B0B00BAEB54 /* AnalyticsPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsPreview.swift; sourceTree = "<group>"; };
 		78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F4357012AF196CA001D2C32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7F4357032AF19C8F001D2C32 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpView.swift; path = ../../../Downloads/SignUpView.swift; sourceTree = "<group>"; };
 		7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		CE37874E2AF1B5F700B1E32A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CE3787502AF1B66100B1E32A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +85,11 @@
 		78B5EF3A2ACCA46800A8B985 /* CheapSkate */ = {
 			isa = PBXGroup;
 			children = (
-				7F4357032AF19C8F001D2C32 /* SignUpView.swift */,
+				CE3787502AF1B66100B1E32A /* ContentView.swift */,
+				CE37874E2AF1B5F700B1E32A /* SignUpView.swift */,
 				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
 				7F4357012AF196CA001D2C32 /* LoginView.swift */,
 				7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */,
-				78B5EF3D2ACCA46800A8B985 /* ContentView.swift */,
 				78E74A792AF17C8600BAEB54 /* Articles */,
 				78E74A782AF17C6800BAEB54 /* Quizzes */,
 				78E74A772AF17C4C00BAEB54 /* Analytics */,
@@ -229,8 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */,
-				7F4357042AF19C8F001D2C32 /* SignUpView.swift in Sources */,
-				78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */,
+				CE37874F2AF1B5F700B1E32A /* SignUpView.swift in Sources */,
+				CE3787512AF1B66100B1E32A /* ContentView.swift in Sources */,
 				7F4357022AF196CA001D2C32 /* LoginView.swift in Sources */,
 				78E74A752AF179B300BAEB54 /* HomeView.swift in Sources */,
 				78E74A7D2AF17CB600BAEB54 /* QuizView.swift in Sources */,
@@ -242,8 +240,6 @@
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 				78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */,
 				78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */,
-				5D43C4EE2AF0175F001241A6 /* ContentView.swift in Sources */,
-				5D7342242AF0052B00E88480 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
