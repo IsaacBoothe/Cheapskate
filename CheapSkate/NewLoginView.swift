@@ -13,7 +13,7 @@ struct NewLoginView: View {
     @State var emailAddress: String = ""
     @State var password: String = ""
     var body: some View {
-        Text("New Login Credenntials Page").padding()
+        Text("New Login Credentials Page").padding()
         //outline of content
         VStack(content: {
             
