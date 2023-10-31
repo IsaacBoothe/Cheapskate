@@ -7,17 +7,14 @@
 
 import SwiftUI
 
-struct SignUp: View {
+struct SignUpView: View {
     @State var userName: String = ""
     @State var email: String = ""
     @State var password: String = ""
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Sign Up Page")
-            Text("Welcome to our app!")
+            Text("Sign Up")
             
             TextField("Username", text: $userName)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -31,23 +28,16 @@ struct SignUp: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button(
-                action: {
-                    // did tap
-                },
-                label: { Text("Sign Up") }
-            )
+            NavigationLink(destination: LoginView()) {
+                VStack {
+                    Text("Sign Up")
+                }
                 .foregroundColor(Color.white)
                 .padding()
-                .background(Color.blue)
+                .background(Color.green)
                 .cornerRadius(5)
+            }
         }
         .padding()
-    }
-}
-
-struct SignUp_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUp()
     }
 }
