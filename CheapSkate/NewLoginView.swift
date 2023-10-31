@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NewLoginView: View {
-    @State var userName: String = ""
     @State var emailAddress: String = ""
     @State var password: String = ""
     var body: some View {
@@ -26,7 +25,7 @@ struct NewLoginView: View {
                 .padding()
             Button(
                 action: {
-                    newLoginCredential(email: email, password: password)
+                    newLoginCredential(email: emailAddress, password: password)
                 },
                 label: { 
                     Text("Update") }
