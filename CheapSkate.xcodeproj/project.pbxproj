@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E43E19F2ADCD2D600369D09 /* CheapSkate in Resources */ = {isa = PBXBuildFile; fileRef = 4E43E19E2ADCD2D500369D09 /* CheapSkate */; };
+		4E95C1722AF1923B00CAE685 /* NewLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95C1712AF1923B00CAE685 /* NewLoginView.swift */; };
 		78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */; };
 		78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3D2ACCA46800A8B985 /* ContentView.swift */; };
 		78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		4E43E19E2ADCD2D500369D09 /* CheapSkate */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CheapSkate; sourceTree = "<group>"; };
+		4E95C1712AF1923B00CAE685 /* NewLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginView.swift; sourceTree = "<group>"; };
 		78B5EF382ACCA46800A8B985 /* CheapSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
 		78B5EF3D2ACCA46800A8B985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
 				78B5EF3D2ACCA46800A8B985 /* ContentView.swift */,
+				4E95C1712AF1923B00CAE685 /* NewLoginView.swift */,
 				78FF37AA2AD64AFC00A1ACF5 /* GoogleService-Info.plist */,
 				78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */,
 				78B5EF412ACCA46A00A8B985 /* Preview Content */,
@@ -164,6 +167,7 @@
 			files = (
 				78B5EF3E2ACCA46800A8B985 /* ContentView.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
+				4E95C1722AF1923B00CAE685 /* NewLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
