@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLoggedIn: Bool = false
+
     var body: some View {
-        PasswordResetView()
+        LoginView()
     }
 }
 
