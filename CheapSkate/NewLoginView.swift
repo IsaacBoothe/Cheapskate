@@ -25,6 +25,7 @@ struct NewLoginView: View {
             Text("Enter your new password")
             SecureField("Enter your new password", text: $password).textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+            
             Button(
                 action: {
                     newLoginCredential(email: emailAddress, password: password)
