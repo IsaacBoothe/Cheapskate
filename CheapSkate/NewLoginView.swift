@@ -64,9 +64,3 @@ func newLoginCredential(email: String, password: String){
                 }
             })
 }
-
-struct New_LoginPreviews: PreviewProvider {
-    static var previews: some View {
-        NewLoginView()
-    }
-}
