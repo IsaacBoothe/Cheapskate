@@ -65,8 +65,6 @@ func loginUser(email: String, password: String) {
 }
 
 struct Login_Previews: PreviewProvider {
-    @State var isLoggedIn: Bool = false
-
     static var previews: some View {
         LoginView()
     }
