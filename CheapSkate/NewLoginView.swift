@@ -47,7 +47,7 @@ func newLoginCredential(email: String, password: String){
     var credential: AuthCredential = EmailAuthProvider.credential(withEmail: "email", password: "pass")
 
     
-    user?.reauthenticateAndRetrieveData(with: credential, completion: {(authResult, error) in
+    user?.reauthenticate(with: credential, completion: {(authResult, error) in
                 if let error = error {
                     // An error happened.
                     print("error in authenticating user credential")
