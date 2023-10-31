@@ -9,17 +9,12 @@ import SwiftUI
 import Firebase
 
 struct SignUpView: View {
-    @State var userName: String = ""
     @State var email: String = ""
     @State var password: String = ""
 
     var body: some View {
         VStack {
             Text("Sign Up")
-            
-            TextField("Username", text: $userName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
             
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
