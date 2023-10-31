@@ -15,10 +15,7 @@ struct NewLoginView: View {
         Text("New Login Credenntials Page").padding()
         //outline of content
         VStack(content: {
-            Text("Placeholder")
-            TextField("Enter your username", text: $userName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            
             Text("Change user email address")
             TextField("Enter your new email address", text: $emailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -29,7 +26,7 @@ struct NewLoginView: View {
                 .padding()
             Button(
                 action: {
-                // did tap
+                
                 },
                 label: { 
                     Text("Update") }
@@ -42,6 +39,10 @@ struct NewLoginView: View {
         .padding()
         .background(Color.green)
     }
+}
+
+func newLoginCredential(email: String, password: String){
+    Auth.auth().getStoredUser(forAccessGroup: <#T##String?#>)
 }
 
 #Preview {
