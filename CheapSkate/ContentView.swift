@@ -7,11 +7,19 @@
 
 import SwiftUI
 
+class AppState: ObservableObject {
+    @Published var isLoggedIn = false
+}
+
 struct ContentView: View {
-    @State var isLoggedIn: Bool = false
+    @StateObject var appState = AppState()
 
     var body: some View {
-        LoginView()
+        if appState.isLoggedIn {
+            HomeView()
+        } else {
+            LoginView(appState: appState)
+        }
     }
 }
 

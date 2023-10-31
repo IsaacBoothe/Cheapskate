@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 
 struct LoginView: View {
+    @ObservedObject var appState: AppState
     @State var email: String = ""
     @State var password: String = ""
         
@@ -62,22 +63,24 @@ struct LoginView: View {
             
         }
     }
-}
-
-
-func loginUser(email: String, password: String) {
-    Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-        if let error = error {
-            print("Login error")
-        } else {
-            print("Login successful")
-            // nagivate to future home screen
+    
+    func loginUser(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                print("Login error")
+            } else {
+                print("Login successful")
+                appState.isLoggedIn = true
+            }
         }
     }
 }
 
+
+
+
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(appState: AppState())
     }
 }
