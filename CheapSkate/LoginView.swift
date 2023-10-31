@@ -48,6 +48,7 @@ struct LoginView: View {
                 .cornerRadius(5)
                 
                NavigationLink(destination: SignUpView()) {
+
                     VStack {
                         Text("Sign Up")
                     }
@@ -55,9 +56,7 @@ struct LoginView: View {
                     .padding()
                     .background(Color.green)
                     .cornerRadius(5)
-                }
-                
-            
+                }      
             }
             .padding()
             
