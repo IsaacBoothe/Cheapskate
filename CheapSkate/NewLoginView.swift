@@ -17,7 +17,7 @@ struct NewLoginView: View {
         //outline of content
         VStack(content: {
             
-            Text("Change user email address")
+            Text("Enter new user email address")
             TextField("Enter your new email address", text: $emailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
