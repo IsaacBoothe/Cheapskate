@@ -26,7 +26,7 @@ struct NewLoginView: View {
                 .padding()
             Button(
                 action: {
-                
+                    newLoginCredential(email: email, password: password)
                 },
                 label: { 
                     Text("Update") }
@@ -42,7 +42,22 @@ struct NewLoginView: View {
 }
 
 func newLoginCredential(email: String, password: String){
-    Auth.auth().getStoredUser(forAccessGroup: <#T##String?#>)
+    let user = Auth.auth().currentUser
+    var credential: AuthCredential
+    
+    user?.reauthenticate(with: credential) {
+        if let error = error {
+            print(error!.localizedDescription)
+        } else {
+            // User re-authenticated
+            Auth.auth().currentUser?.updatePassword(to: password) {
+                print(error!.localizedDescription)
+            }
+            Auth.auth().currentUser?.updateEmail(to: email){
+                print(error!.localizedDescription)
+            }
+        }
+    }
 }
 
 #Preview {
