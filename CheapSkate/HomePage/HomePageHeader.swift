@@ -19,7 +19,6 @@ struct HomePageHeader: View {
                 .padding(.bottom, 4)
                 .foregroundColor(Color(hex: "a49665"))
             
-            
             Text("Finance Tip of the Day")
                 .font(.system(size: 22))
                 .bold()
@@ -30,6 +29,8 @@ struct HomePageHeader: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 300, height: 2)
                 .foregroundColor(Color(hex: "a49665"))
+            
+
         }
     }
 }

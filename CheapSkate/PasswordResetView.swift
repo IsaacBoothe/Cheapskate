@@ -1,8 +1,9 @@
 //
-//  passwordreset.swift
+//  PasswordResetView.swift
 //  CheapSkate
-// Created by Jared Fulk on 10/30/23
-
+//
+//  Created by Jared Fulk on 10/30/23.
+//
 
 import SwiftUI
 import FirebaseAuth
@@ -50,4 +51,3 @@ func resetPassword(email: String) {
     }
 }
 }
-

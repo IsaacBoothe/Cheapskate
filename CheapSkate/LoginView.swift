@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  LoginView.swift
 //  CheapSkate
 //
 //  Created by Walker Clem on 10/30/23.
@@ -31,7 +31,6 @@ struct LoginView: View {
                         Text("Forgot Password?")
                     }
                     .foregroundColor(Color.white)
-                    .font(.system(size: 12))
                     .padding()
                     .background(Color.green)
                     .cornerRadius(5)
@@ -66,7 +65,7 @@ struct LoginView: View {
     
     func loginUser(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
-            if let error = error {
+            if error != nil {
                 print("Login error")
             } else {
                 print("Login successful")
@@ -75,9 +74,6 @@ struct LoginView: View {
         }
     }
 }
-
-
-
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
