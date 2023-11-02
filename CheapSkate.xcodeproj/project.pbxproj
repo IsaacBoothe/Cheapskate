@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EB575902AF40DFE0057B063 /* NewLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5758F2AF40DFE0057B063 /* NewLoginView.swift */; };
 		5D4A9F9B2AF1DEAE00EB41FD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4A9F9A2AF1DEAE00EB41FD /* Settings.swift */; };
 		78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */; };
 		78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EB5758F2AF40DFE0057B063 /* NewLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginView.swift; sourceTree = "<group>"; };
 		5D4A9F9A2AF1DEAE00EB41FD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		78B5EF382ACCA46800A8B985 /* CheapSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3787502AF1B66100B1E32A /* ContentView.swift */,
+				4EB5758F2AF40DFE0057B063 /* NewLoginView.swift */,
 				CE37874E2AF1B5F700B1E32A /* SignUpView.swift */,
 				78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */,
 				7F4357012AF196CA001D2C32 /* LoginView.swift */,
@@ -240,6 +243,7 @@
 				78E74A7B2AF17C9900BAEB54 /* AnalyticsView.swift in Sources */,
 				78E74A712AF1793900BAEB54 /* HomePageHeader.swift in Sources */,
 				5D4A9F9B2AF1DEAE00EB41FD /* Settings.swift in Sources */,
+				4EB575902AF40DFE0057B063 /* NewLoginView.swift in Sources */,
 				78E74A732AF1797000BAEB54 /* MainTabView.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 				78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */,
