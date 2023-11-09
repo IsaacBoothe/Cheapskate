@@ -29,6 +29,8 @@
 		7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */; };
 		CE37874F2AF1B5F700B1E32A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37874E2AF1B5F700B1E32A /* SignUpView.swift */; };
 		CE3787512AF1B66100B1E32A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3787502AF1B66100B1E32A /* ContentView.swift */; };
+		CECF520B2AFD430E00DC4AEA /* ArticlePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */; };
+		CECF520D2AFD458C00DC4AEA /* ArticlePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		CE37874E2AF1B5F700B1E32A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CE3787502AF1B66100B1E32A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreview.swift; sourceTree = "<group>"; };
+		CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				78E74A7E2AF17CCC00BAEB54 /* ArticlesView.swift */,
+				CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */,
+				CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -234,6 +240,8 @@
 				CE3787512AF1B66100B1E32A /* ContentView.swift in Sources */,
 				7F4357022AF196CA001D2C32 /* LoginView.swift in Sources */,
 				78E74A752AF179B300BAEB54 /* HomeView.swift in Sources */,
+				CECF520D2AFD458C00DC4AEA /* ArticlePage.swift in Sources */,
+				CECF520B2AFD430E00DC4AEA /* ArticlePreview.swift in Sources */,
 				78E74A7D2AF17CB600BAEB54 /* QuizView.swift in Sources */,
 				78E74A7F2AF17CCC00BAEB54 /* ArticlesView.swift in Sources */,
 				78E74A6F2AF178F600BAEB54 /* ColorExt.swift in Sources */,

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ArticlesView: View {
     var body: some View {
-        Text("Articles View!!")
+        VStack {
+            Text("Monthly Articles")
+            
+            ArticlePreview(
+                header: "Importance of Saving",
+                preview: "Lorem Ipsum")
+        }
     }
 }
 
