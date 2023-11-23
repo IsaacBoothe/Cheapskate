@@ -19,12 +19,10 @@ class ArticleModelController: ObservableObject {
     
     func likeArticle() {
         service.likeArticle(article) {_ in self.liked = true}
-        self.liked = true
     }
     
     func unlikeArticle() {
         service.unlikeArticle(article) {_ in self.liked = false}
-        self.liked = false
     }
     
     func checkIfUserLiked() {
