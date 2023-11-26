@@ -29,6 +29,8 @@
 		7F884A772AF03B2600C4CF0B /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */; };
 		CE37874F2AF1B5F700B1E32A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37874E2AF1B5F700B1E32A /* SignUpView.swift */; };
 		CE3787512AF1B66100B1E32A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3787502AF1B66100B1E32A /* ContentView.swift */; };
+		CE7347BA2B0B09BE008E28E1 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7347B92B0B09BE008E28E1 /* ArticleService.swift */; };
+		CE7347C22B0B19A7008E28E1 /* ArticleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7347C12B0B19A7008E28E1 /* ArticleModelController.swift */; };
 		CECF520B2AFD430E00DC4AEA /* ArticlePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */; };
 		CECF520D2AFD458C00DC4AEA /* ArticlePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		7F884A762AF03B2600C4CF0B /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		CE37874E2AF1B5F700B1E32A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CE3787502AF1B66100B1E32A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE7347B92B0B09BE008E28E1 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		CE7347C12B0B19A7008E28E1 /* ArticleModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModelController.swift; sourceTree = "<group>"; };
 		CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePreview.swift; sourceTree = "<group>"; };
 		CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,8 @@
 				78E74A7E2AF17CCC00BAEB54 /* ArticlesView.swift */,
 				CECF520A2AFD430E00DC4AEA /* ArticlePreview.swift */,
 				CECF520C2AFD458C00DC4AEA /* ArticlePage.swift */,
+				CE7347B92B0B09BE008E28E1 /* ArticleService.swift */,
+				CE7347C12B0B19A7008E28E1 /* ArticleModelController.swift */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -246,9 +252,11 @@
 				78E74A7F2AF17CCC00BAEB54 /* ArticlesView.swift in Sources */,
 				78E74A6F2AF178F600BAEB54 /* ColorExt.swift in Sources */,
 				78E74A7B2AF17C9900BAEB54 /* AnalyticsView.swift in Sources */,
+				CE7347C22B0B19A7008E28E1 /* ArticleModelController.swift in Sources */,
 				78E74A712AF1793900BAEB54 /* HomePageHeader.swift in Sources */,
 				5D4A9F9B2AF1DEAE00EB41FD /* Settings.swift in Sources */,
 				78E74A732AF1797000BAEB54 /* MainTabView.swift in Sources */,
+				CE7347BA2B0B09BE008E28E1 /* ArticleService.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 				78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */,
 				78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */,
