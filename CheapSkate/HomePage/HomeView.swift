@@ -26,6 +26,7 @@ struct HomeView: View {
                     Text("Featured")
                         .font(.system(size: 30))
                         .bold()
+                        .padding(.top, -20)
                     
                     // Pass down headline titles to display and attach navigation
                     HeadlinesPreview(
