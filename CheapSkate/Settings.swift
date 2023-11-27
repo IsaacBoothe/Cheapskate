@@ -37,7 +37,7 @@ struct Settings: View {
             
             Button("Log Out", action: logOut)
                 .padding()
-            
+            //Print error message if found
             Text(errorMessage)
                 .foregroundColor(.red)
                 .padding()
