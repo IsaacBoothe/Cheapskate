@@ -82,6 +82,7 @@ struct QuizIntroView: View {
                 .font(.title3)
                 .fontWeight(.bold)
                 .padding(.bottom, 12)
+                .fixedSize(horizontal: false, vertical: true)
             
             ForEach(rules, id: \.self){ rule in
                 HStack(alignment: .top, spacing: 10){

@@ -107,6 +107,7 @@ struct QuestionView: View {
                 .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(.black)
+                .fixedSize(horizontal: false, vertical: true)
             
             VStack(spacing:12){
                 ForEach(question.choice, id: \.self){choice in
@@ -120,6 +121,7 @@ struct QuestionView: View {
                             .opacity(question.tappedAnswer == choice && question.tappedAnswer != question.answer ? 1 : 0)
                     }
                     .contentShape(Rectangle())
+                    .fixedSize(horizontal: false, vertical: true)
                     .onTapGesture{
                         // Disabling Tap if answer was selected
                         guard  questions[currentIndex].tappedAnswer == "" else {return}
