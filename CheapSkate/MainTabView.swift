@@ -16,7 +16,7 @@ struct MainTabView: View {
                     Text("Home")
                 }
             
-            ArticlesView(viewModel: ArticleModelController(article: "Article1"))
+            ArticlesView()
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("Articles")
