@@ -8,13 +8,6 @@
 import SwiftUI
 
 struct ArticlesView: View {
-    let articleService = ArticleService()
-    @ObservedObject var viewModel: ArticleModelController
-    
-    init(viewModel: ArticleModelController) {
-        self.viewModel = viewModel
-    }
-    
     var body: some View {
         VStack {
             Text("Monthly Articles")
@@ -28,6 +21,6 @@ struct ArticlesView: View {
 
 struct ArticlesView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticlesView(viewModel: ArticleModelController(article: "Article1"))
+        ArticlesView()
     }
 }
