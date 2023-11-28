@@ -94,62 +94,66 @@ struct QuestionView: View {
             }
         }
     }
-    
     @ViewBuilder
-    func QuestionView(_ question: Questions)-> some View{
-        VStack(alignment: .leading, spacing: 15){
-            Text("Question \(currentIndex + 1)/\(questions.count)")
-                .font(.callout)
-                .foregroundColor(.gray)
-                .hAlign(.leading)
-            
-            Text(question.question)
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundColor(.black)
-                .fixedSize(horizontal: false, vertical: true)
-            
-            VStack(spacing:12){
-                ForEach(question.choice, id: \.self){choice in
-                    // - Displaying Correct and Wrong answers after users has Tapped any one of the Options
-                    ZStack{
-                        ChoiceView(choice, .gray)
-                            .opacity(question.answer == choice && question.tappedAnswer != "" ? 0 : 1)
-                        ChoiceView(choice, .green)
-                            .opacity(question.answer == choice && question.tappedAnswer != "" ? 1 : 0)
-                        ChoiceView(choice, .red)
-                            .opacity(question.tappedAnswer == choice && question.tappedAnswer != question.answer ? 1 : 0)
-                    }
-                    .contentShape(Rectangle())
-                    .fixedSize(horizontal: false, vertical: true)
-                    .onTapGesture{
-                        // Disabling Tap if answer was selected
-                        guard  questions[currentIndex].tappedAnswer == "" else {return}
-                        withAnimation(.easeInOut){
-                            questions[currentIndex].tappedAnswer = choice
-                            /// - Whenever the correct answer is chosen the score will be updated
-                            if question.answer == choice{
-                                score += 1.0
+    func QuestionView(_ question: Questions) -> some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Question \(currentIndex + 1)/\(questions.count)")
+                    .font(.callout)
+                    .foregroundColor(.gray)
+                    .padding(.leading)
+
+                Text(question.question)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+                    .lineLimit(nil) // Allow text to wrap
+                    .padding(.leading)
+
+                VStack(spacing: 12) {
+                    ForEach(question.choice, id: \.self) { choice in
+                        // - Displaying Correct and Wrong answers after users have Tapped any one of the Options
+                        ZStack {
+                            ChoiceView(choice, .gray)
+                                .opacity(question.answer == choice && question.tappedAnswer != "" ? 0 : 1)
+                            ChoiceView(choice, .green)
+                                .opacity(question.answer == choice && question.tappedAnswer != "" ? 1 : 0)
+                            ChoiceView(choice, .red)
+                                .opacity(question.tappedAnswer == choice && question.tappedAnswer != question.answer ? 1 : 0)
+                        }
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            // Disabling Tap if an answer was selected
+                            guard questions[currentIndex].tappedAnswer == "" else { return }
+                            withAnimation(.easeInOut) {
+                                questions[currentIndex].tappedAnswer = choice
+                                /// - Whenever the correct answer is chosen the score will be updated
+                                if question.answer == choice {
+                                    score += 1.0
+                                }
                             }
                         }
                     }
                 }
+                .padding(.vertical, 10)
             }
-            .padding(.vertical, 10)
+            .padding(15)
+            .background {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(Color.white)
+            }
+            .padding(.horizontal, 15)
+            .frame(minHeight: 0, maxHeight: .infinity) // Ensure the inner VStack can grow vertically
         }
-        .padding(15)
-        .hAlign(.center)
-        .background{
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(.white)
-        }
-        .padding(.horizontal, 15)
     }
+
+
     
     @ViewBuilder
     func ChoiceView(_ choice: String,_ tint: Color)->some View{
         Text(choice)
             .foregroundColor(tint)
+            .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             .padding(.horizontal, 15)
             .padding(.vertical, 20)
             .hAlign(.leading)
@@ -216,7 +220,7 @@ struct ScoreCardView: View{
         }
         .padding(15)
         .background{
-            Color(.green)
+            Color(.black)
                 .ignoresSafeArea()
         }
     }
