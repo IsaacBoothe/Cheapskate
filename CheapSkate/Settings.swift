@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 
 struct Settings: View {
+    @EnvironmentObject var appState: AppState
     @State private var newEmail = ""
     @State private var newPassword = ""
     @State private var confirmPassword = ""
@@ -47,6 +48,7 @@ struct Settings: View {
     func logOut() {
         do {
             try Auth.auth().signOut()
+            appState.isLoggedIn = false
         } catch let signOutError as NSError {
           print("Error signing out: %@", signOutError)
         }

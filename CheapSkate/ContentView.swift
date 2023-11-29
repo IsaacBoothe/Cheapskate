@@ -18,6 +18,7 @@ struct ContentView: View {
         if appState.isLoggedIn {
             //pass user here somehow????
             MainTabView()
+                .environmentObject(appState)
         } else {
             LoginView(appState: appState)
         }
