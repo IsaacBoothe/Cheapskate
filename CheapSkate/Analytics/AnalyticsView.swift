@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AnalyticsView: View {
     var body: some View {
-        Text("Analytics View!!")
-    }
-}
-
-struct AnalyticsView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnalyticsView()
+        VStack {
+            TabView {
+                LeaderboardView()
+                
+                LineChartView()
+            }.tabViewStyle(.page)
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
+        }
     }
 }
