@@ -16,6 +16,7 @@ struct ContentView: View {
 
     var body: some View {
         if appState.isLoggedIn {
+            //pass user here somehow????
             MainTabView()
         } else {
             LoginView(appState: appState)

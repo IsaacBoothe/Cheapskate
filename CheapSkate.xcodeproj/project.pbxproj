@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D4A9F9B2AF1DEAE00EB41FD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4A9F9A2AF1DEAE00EB41FD /* Settings.swift */; };
+		7862C32E2B171B2B00779DEF /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862C32D2B171B2B00779DEF /* LeaderboardView.swift */; };
+		7862C3302B171F0200779DEF /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7862C32F2B171F0200779DEF /* LineChartView.swift */; };
 		78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */; };
 		78B5EF402ACCA46A00A8B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */; };
 		78B5EF432ACCA46A00A8B985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B5EF422ACCA46A00A8B985 /* Preview Assets.xcassets */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		5D4A9F9A2AF1DEAE00EB41FD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		7862C32D2B171B2B00779DEF /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		7862C32F2B171F0200779DEF /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		78B5EF382ACCA46800A8B985 /* CheapSkate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheapSkate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
 		78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				78E74A7A2AF17C9900BAEB54 /* AnalyticsView.swift */,
+				7862C32F2B171F0200779DEF /* LineChartView.swift */,
+				7862C32D2B171B2B00779DEF /* LeaderboardView.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 				CECF520B2AFD430E00DC4AEA /* ArticlePreview.swift in Sources */,
 				78E74A7D2AF17CB600BAEB54 /* QuizView.swift in Sources */,
 				78E74A7F2AF17CCC00BAEB54 /* ArticlesView.swift in Sources */,
+				7862C32E2B171B2B00779DEF /* LeaderboardView.swift in Sources */,
 				78E74A6F2AF178F600BAEB54 /* ColorExt.swift in Sources */,
 				78E74A7B2AF17C9900BAEB54 /* AnalyticsView.swift in Sources */,
 				CE7347C22B0B19A7008E28E1 /* ArticleModelController.swift in Sources */,
@@ -257,6 +264,7 @@
 				5D4A9F9B2AF1DEAE00EB41FD /* Settings.swift in Sources */,
 				78E74A732AF1797000BAEB54 /* MainTabView.swift in Sources */,
 				CE7347BA2B0B09BE008E28E1 /* ArticleService.swift in Sources */,
+				7862C3302B171F0200779DEF /* LineChartView.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 				78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */,
 				78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */,

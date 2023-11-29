@@ -11,14 +11,20 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: Settings()) {
-                    VStack {
-                        Text("Settings")
+                HStack {
+                    Spacer()
+                    
+                    NavigationLink(destination: Settings()) {
+                        VStack {
+                            Image(systemName: "person.crop.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 30)
+                        }.padding(20)
+                        .frame(height: 10)
+                        .padding(.top, 5)
                     }
-                    .cornerRadius(5)
-                    .frame(width: 300, height: 2)
                 }
-                
                 // Will need to pass down user's name and finance tip here
                 HomePageHeader()
                 
