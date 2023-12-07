@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 import FirebaseFirestore
 
 struct QuestionView: View {
@@ -214,6 +216,15 @@ struct ScoreCardView: View{
                 Firestore.firestore().collection("Quiz").document("sd7BAC1ZPdiTrMp2Tbu7").updateData([
                     "peopleAttended": FieldValue.increment(1.0)
                 ])
+                /// Add the user scores to the firebase into a collection of users scores
+                Firestore.firestore().collection("QuizScore").addDocument(data: ["Score": FieldValue.arrayUnion([score]), "User": Auth.auth().currentUser?.uid]){ err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                    }
+                }
+                
                 onDismiss()
                 dismiss()
             }

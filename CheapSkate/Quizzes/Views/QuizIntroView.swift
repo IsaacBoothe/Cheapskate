@@ -135,6 +135,7 @@ struct QuizIntroView: View {
                 .compactMap { document -> Questions? in
                     do {
                         return try document.data(as: Questions.self)
+                        
                     } catch {
                         print("Error decoding document: \(error.localizedDescription)")
                         return nil
