@@ -79,7 +79,7 @@ struct LineChartView: View {
     }
 }
 
-struct WeeklyQuizScores: Identifiable {
+struct WeeklyQuizScores: Identifiable, Codable {
         let id = UUID()
         let quiz: String
         let score: Double

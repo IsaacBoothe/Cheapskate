@@ -58,8 +58,6 @@ struct HomePageHeader: View {
                 .font(.system(size: 22))
                 .bold()
                 .padding(.bottom, -3)
-
-            
             
             Text(randomTip())
                 .font(.system(size: 14))
@@ -69,7 +67,6 @@ struct HomePageHeader: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 300, height: 2)
                 .foregroundColor(Color(hex: "a49665"))
-            
         }
         .onAppear {
             self.tipViewModel.fetchTips()
