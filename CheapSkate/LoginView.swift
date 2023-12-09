@@ -16,50 +16,93 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
+                //maybe push this down a little bit // add very light grey background
+                Text("Cheapskate")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(hex: "005035"))
+                    .underline()
+                
+                Spacer()
+                
                 Text("Login")
-                
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(hex: "a49665"))
 
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                
-                NavigationLink(destination: PasswordResetView()) {
-                    VStack {
-                        Text("Forgot Password?")
-                    }
-                    .foregroundColor(Color.white)
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(5)
+                HStack {
+                    Image(systemName: "at")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 15, height: 15)
+                        .padding(.leading)
+                    
+                    TextField("Email", text: $email)
+                        .padding()
                 }
+                .background(Color(hex: "C5C5C5"))
+                .cornerRadius(10)
+                .padding(.horizontal)
+                .padding(.bottom)
+                
+                HStack {
+                    Image(systemName: "lock.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 15, height: 15)
+                        .padding(.leading)
+                    
+                    SecureField("Password", text: $password)
+                        .padding()
+                }
+                .background(Color(hex: "C5C5C5"))
+                .cornerRadius(10)
+                .padding(.horizontal)
+                .padding(.bottom, 10)
                 
                 Button(
                     action: {
                         loginUser(email: email, password: password)
                     },
-                    label: { Text("Log In") }
+                    label: { Text("Log In").font(.title3) }
                 )
+                .frame(width: 120)
                 .foregroundColor(Color.white)
                 .padding()
-                .background(Color.green)
+                .background(Color(hex: "005035"))
                 .cornerRadius(5)
+                .bold()
+                .padding(.top, 15)
+                
                 
                NavigationLink(destination: SignUpView()) {
-
                     VStack {
-                        Text("Sign Up")
+                        Text("Sign Up").font(.title3)
                     }
+                    .frame(width: 120)
                     .foregroundColor(Color.white)
                     .padding()
-                    .background(Color.green)
+                    .background(Color(hex: "005035"))
                     .cornerRadius(5)
-                }      
+                    .bold()
+                    .padding()
+                }
+                
+                NavigationLink(destination: PasswordResetView()) {
+                    VStack {
+                        Text("Forgot Password?")
+                            .font(.system(size: 16))
+                    }
+                    .foregroundColor(Color.white)
+                    .padding(6)
+                    .background(Color(hex: "a49665"))
+                    .cornerRadius(5)
+                    .padding(.top, 30)
+                }
+                
+                 Spacer()
             }
             .padding()
-            
         }
     }
     
