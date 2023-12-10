@@ -35,11 +35,21 @@ class TipViewModel: ObservableObject {
 struct HomePageHeader: View {
     @ObservedObject var tipViewModel = TipViewModel()
     
+    // Hashes the date and uses the modulus operator to get a unique tip each day
     func randomTip() -> String {
-        guard let randomTip = tipViewModel.tips.first?.tips.randomElement() else {
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let dateString = dateFormatter.string(from: currentDate)
+        
+        if let tips = tipViewModel.tips.first?.tips, !tips.isEmpty {
+            let hashValue = abs(dateString.hashValue) % tips.count
+            let randomTip = tips[hashValue]
+            return randomTip
+        } else {
             return "No tips available"
         }
-        return randomTip
     }
     
     var body: some View {
