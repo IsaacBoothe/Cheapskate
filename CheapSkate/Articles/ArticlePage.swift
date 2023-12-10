@@ -24,7 +24,6 @@ struct ArticlePage: View {
 }
 
 struct LikeButton: View {
-    let articleService = ArticleService()
     @ObservedObject var viewModel: ArticleModelController
     
     init(viewModel: ArticleModelController) {
@@ -38,9 +37,9 @@ struct LikeButton: View {
             } else {
                 viewModel.likeArticle()
             }
-            
+        
         } label: {
-                Image(systemName: viewModel.liked ?? false ? "hand.thumbsup.fill" : "hand.thumbsup")
+            Image(systemName: viewModel.liked ?? false ? "hand.thumbsup.fill" : "hand.thumbsup")
             }
         }
 }
