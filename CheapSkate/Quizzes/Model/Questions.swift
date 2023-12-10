@@ -13,6 +13,7 @@ struct Questions: Identifiable, Codable {
     var answer: String
     var choice: [String]
     var question: String
+    var explanation: String
     
     // for UI State Updates
     var tappedAnswer: String = ""
@@ -21,6 +22,7 @@ struct Questions: Identifiable, Codable {
         case answer
         case choice
         case question
+        case explanation
     }
 }
 

@@ -138,6 +138,13 @@ struct QuestionView: View {
                     }
                 }
                 .padding(.vertical, 10)
+                
+                Text(question.explanation)
+                    .font(.body)
+                    .foregroundColor(.gray)
+                    .lineLimit(nil)
+                    .padding(.leading)
+                    .opacity(question.tappedAnswer != "" ? 1 : 0)
             }
             .padding(15)
             .background {
