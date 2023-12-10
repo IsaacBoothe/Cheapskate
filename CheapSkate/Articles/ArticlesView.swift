@@ -14,7 +14,7 @@ struct ArticlesView: View {
             
             ArticlePreview(
                 header: "Importance of Saving",
-                preview: "Lorem Ipsum")
+                preview: "A short article covering \n why you should save")
         }
     }
 }

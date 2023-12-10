@@ -9,7 +9,7 @@ import Foundation
 
 class ArticleModelController: ObservableObject {
     var article: String
-    var liked: Bool? = false
+    @Published var liked: Bool? = false
     private let service = ArticleService()
     
     init(article: String) {
