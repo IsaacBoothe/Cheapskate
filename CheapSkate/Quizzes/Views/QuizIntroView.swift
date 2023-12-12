@@ -20,6 +20,7 @@ struct QuizIntroView: View {
                 Text(info.title)
                     .font(.title)
                     .fontWeight(.semibold)
+                    .foregroundColor(Color(hex: "a49665"))
                     .hAlign(.leading)
                 
                 // - Custom Label
@@ -193,7 +194,7 @@ struct CustomButton: View{
                 .foregroundColor(.white)
                 .background{
                     Rectangle()
-                        .fill(Color(.green))
+                        .fill(Color(hex: "005035"))
                         .ignoresSafeArea()
                 }
         }

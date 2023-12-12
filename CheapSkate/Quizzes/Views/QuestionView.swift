@@ -35,6 +35,7 @@ struct QuestionView: View {
             Text(info.title)
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(Color(hex: "a49665"))
                 .hAlign(.leading)
             //Progress bar that shows how much the user needs to complete the quiz
             GeometryReader{
