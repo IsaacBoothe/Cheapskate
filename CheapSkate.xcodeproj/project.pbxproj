@@ -22,6 +22,7 @@
 		78B74A9E2AD65550007DC567 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74A9D2AD65550007DC567 /* FirebaseAnalyticsSwift */; };
 		78B74AA02AD65550007DC567 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74A9F2AD65550007DC567 /* FirebaseAuth */; };
 		78B74AA22AD65550007DC567 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78B74AA12AD65550007DC567 /* FirebaseFirestore */; };
+		78DA38BC2B283190004A5895 /* MyQuizScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA38BB2B283190004A5895 /* MyQuizScores.swift */; };
 		78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A6C2AF1773700BAEB54 /* HeadlinesPreview.swift */; };
 		78E74A6F2AF178F600BAEB54 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A6E2AF178F600BAEB54 /* ColorExt.swift */; };
 		78E74A712AF1793900BAEB54 /* HomePageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E74A702AF1793900BAEB54 /* HomePageHeader.swift */; };
@@ -54,6 +55,7 @@
 		78B5EF3B2ACCA46800A8B985 /* CheapSkateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapSkateApp.swift; sourceTree = "<group>"; };
 		78B5EF3F2ACCA46A00A8B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78B5EF422ACCA46A00A8B985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78DA38BB2B283190004A5895 /* MyQuizScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQuizScores.swift; sourceTree = "<group>"; };
 		78E74A6C2AF1773700BAEB54 /* HeadlinesPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesPreview.swift; sourceTree = "<group>"; };
 		78E74A6E2AF178F600BAEB54 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		78E74A702AF1793900BAEB54 /* HomePageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageHeader.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				78E74A7A2AF17C9900BAEB54 /* AnalyticsView.swift */,
 				7862C32F2B171F0200779DEF /* LineChartView.swift */,
 				7862C32D2B171B2B00779DEF /* LeaderboardView.swift */,
+				78DA38BB2B283190004A5895 /* MyQuizScores.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				78E74A732AF1797000BAEB54 /* MainTabView.swift in Sources */,
 				CE7347BA2B0B09BE008E28E1 /* ArticleService.swift in Sources */,
 				7862C3302B171F0200779DEF /* LineChartView.swift in Sources */,
+				78DA38BC2B283190004A5895 /* MyQuizScores.swift in Sources */,
 				78B5EF3C2ACCA46800A8B985 /* CheapSkateApp.swift in Sources */,
 				78E74A6D2AF1773700BAEB54 /* HeadlinesPreview.swift in Sources */,
 				78E74A812AF18B0B00BAEB54 /* AnalyticsPreview.swift in Sources */,

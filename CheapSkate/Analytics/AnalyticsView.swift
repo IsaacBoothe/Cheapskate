@@ -11,9 +11,11 @@ struct AnalyticsView: View {
     var body: some View {
         VStack {
             TabView {
-                LeaderboardView()
+                MyQuizScores()
                 
                 LineChartView()
+                
+                LeaderboardView()
             }.tabViewStyle(.page)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
         }

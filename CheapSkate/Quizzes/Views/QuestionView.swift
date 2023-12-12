@@ -218,20 +218,34 @@ struct ScoreCardView: View{
             }
             .vAlign(.center)
             
-            CustomButton(title: "Back to Home"){
-                /// Updates the people attended the quiz before it closes
+           CustomButton(title: "Back to Home") {
                 Firestore.firestore().collection("Quiz").document("sd7BAC1ZPdiTrMp2Tbu7").updateData([
                     "peopleAttended": FieldValue.increment(1.0)
                 ])
-                /// Add the user scores to the firebase into a collection of users scores
-                Firestore.firestore().collection("QuizScore").addDocument(data: ["Score": FieldValue.arrayUnion([score]), "User": Auth.auth().currentUser?.uid]){ err in
-                    if let err = err {
-                        print("Error writing document: \(err)")
-                    } else {
-                        print("Document successfully written!")
+
+                if let currentUserUID = Auth.auth().currentUser?.uid {
+                    // Fetch the user name based on the currentUserUID
+                    fetchUserName(for: currentUserUID) { userName in
+                        if let userName = userName {
+                            // Add the user scores to the "QuizScore" collection with userName
+                            print("userrrrr", userName)
+                            Firestore.firestore().collection("QuizScore").addDocument(data: [
+                                "Score": FieldValue.arrayUnion([score]),
+                                "User": currentUserUID,
+                                "UserName": userName
+                            ]) { err in
+                                if let err = err {
+                                    print("Error writing document: \(err)")
+                                } else {
+                                    print("Document successfully written!")
+                                }
+                            }
+                        } else {
+                            print("Error: Unable to fetch userName for currentUserUID \(currentUserUID)")
+                        }
                     }
                 }
-                
+
                 onDismiss()
                 dismiss()
             }
@@ -240,6 +254,26 @@ struct ScoreCardView: View{
         .background{
             Color(.black)
                 .ignoresSafeArea()
+        }
+    }
+    
+    func fetchUserName(for userID: String, completion: @escaping (String?) -> Void) {
+        let usersCollectionRef = Firestore.firestore().collection("Users")
+
+        usersCollectionRef.document(userID).getDocument { document, error in
+            if let error = error {
+                print("Error fetching user data: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+
+            if let document = document, document.exists {
+                let userName = document["userName"] as? String
+                completion(userName)
+            } else {
+                print("Error: User document not found for userID \(userID)")
+                completion(nil)
+            }
         }
     }
 }

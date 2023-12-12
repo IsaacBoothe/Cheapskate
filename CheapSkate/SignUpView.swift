@@ -12,6 +12,7 @@ struct SignUpView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var email: String = ""
     @State var password: String = ""
+    @State var userName: String = ""
     
     var body: some View {
         VStack {
@@ -27,6 +28,21 @@ struct SignUpView: View {
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color(hex: "a49665"))
+            
+            HStack {
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 15, height: 15)
+                    .padding(.leading)
+                
+                TextField("UserName", text: $userName)
+                    .padding()
+            }
+            .background(Color(hex: "C5C5C5"))
+            .cornerRadius(10)
+            .padding(.horizontal)
+            .padding(.bottom)
             
             HStack {
                 Image(systemName: "at")
@@ -71,7 +87,6 @@ struct SignUpView: View {
                     .cornerRadius(5)
                     .bold()
                     .padding()
-                    
                 }
             )
             
@@ -79,11 +94,34 @@ struct SignUpView: View {
         }.padding()
     }
     
+    func addUsersCollection() {
+        // Ensure there is a currently authenticated user
+        guard let currentUser = Auth.auth().currentUser else {
+            print("Error: No user is currently authenticated")
+            return
+        }
+        let usersCollectionRef = Firestore.firestore().collection("Users")
+
+        let userData: [String: Any] = [
+            "userName": userName,
+            "userID": currentUser.uid
+        ]
+
+        usersCollectionRef.document(currentUser.uid).setData(userData) { error in
+             if let error = error {
+                 print("Error adding user to Firestore: \(error.localizedDescription)")
+             } else {
+                 print("User added to Firestore successfully!")
+             }
+        }
+    }
+
     func registerUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if error != nil {
                 print(error!.localizedDescription)
             } else {
+                addUsersCollection()
                 self.presentationMode.wrappedValue.dismiss()
             }
         }
