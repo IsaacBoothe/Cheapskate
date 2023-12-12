@@ -15,6 +15,7 @@ struct Tip: Identifiable {
 
 class TipViewModel: ObservableObject {
     @Published var tips: [Tip] = []
+    @Published var userName: String = "User"
     
     private var db = Firestore.firestore()
     
@@ -30,6 +31,37 @@ class TipViewModel: ObservableObject {
             self.tips = [tip]
         }
     }
+    
+    func fetchUserDocument() {
+        guard let currentUserUID = Auth.auth().currentUser?.uid else {
+            print("Error: No user UID available")
+            return
+        }
+        let usersCollectionRef = Firestore.firestore().collection("Users")
+
+        usersCollectionRef.whereField("userID", isEqualTo: currentUserUID).getDocuments { querySnapshot, error in
+            if let error = error {
+                print("Error fetching user document: \(error.localizedDescription)")
+                return
+            }
+
+            guard let documents = querySnapshot?.documents else {
+                print("No documents found")
+                return
+            }
+
+            if let userDocument = documents.first {
+                let userData = userDocument.data()
+                self.userName = userData["userName"] as? String ?? ""
+//                self.userName = String(self.userName.dropFirst())
+//                self.userName = String(self.userName.dropLast())
+            } else {
+                print("No matching user document found")
+            }
+        }
+    }
+    
+
 }
 
 struct HomePageHeader: View {
@@ -54,7 +86,7 @@ struct HomePageHeader: View {
     
     var body: some View {
         VStack(alignment: .center){
-            Text("Welcome, User")
+            Text("Welcome, \(tipViewModel.userName)")
                 .font(.system(size: 35))
                 .bold()
                 .padding(.bottom, -3)
@@ -80,6 +112,7 @@ struct HomePageHeader: View {
         }
         .onAppear {
             self.tipViewModel.fetchTips()
+            self.tipViewModel.fetchUserDocument()
         }
     }
 }

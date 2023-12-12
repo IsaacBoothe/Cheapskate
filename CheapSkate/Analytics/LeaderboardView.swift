@@ -9,16 +9,16 @@ import SwiftUI
 
 struct LeaderboardView: View {
     let currentWeekScores: [TopWeeklyScores] = [
-        TopWeeklyScores(username: "BMclaughlin", rank: 1, score: 100),
-        TopWeeklyScores(username: "IKim", rank: 2, score: 100),
-        TopWeeklyScores(username: "WClem", rank: 3, score: 75),
-        TopWeeklyScores(username: "JFulk", rank: 4, score: 50),
-        TopWeeklyScores(username: "IBoothe", rank: 5, score: 25),
+        TopWeeklyScores(username: "BMclaughlin", rank: 1, score: 57),
+        TopWeeklyScores(username: "IKim", rank: 2, score: 54),
+        TopWeeklyScores(username: "WClem", rank: 3, score: 49),
+        TopWeeklyScores(username: "JFulk", rank: 4, score: 45),
+        TopWeeklyScores(username: "IBoothe", rank: 5, score: 43),
     ]
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Text("This Weeks Top Scores")
+            Text("Most Active Users")
                 .font(.system(size: 25))
                 .fontWeight(.bold)
             
@@ -37,7 +37,7 @@ struct LeaderboardView: View {
                     .bold()
                     .frame(maxWidth: .infinity)
 
-                Text("Score")
+                Text("Hours")
                     .bold()
                     .frame(maxWidth: .infinity)
             }
